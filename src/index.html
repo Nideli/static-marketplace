@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Репетиторы по программированию</title>
+  <link rel="stylesheet" href="./styles.css" />
+</head>
+<body>
+  <main class="container">
+    <h1>Репетиторы по программированию</h1>
+    <p class="subtitle">
+      Найдите преподавателя для ребёнка — от Scratch до Python.
+    </p>
+
+    <ul id="tutors-list" class="tutors"></ul>
+
+    <form id="filter-form" class="filter">
+      <label for="lang">Фильтр по языку:</label>
+      <select id="lang" name="lang">
+        <option value="">Все</option>
+        <option value="Python">Python</option>
+        <option value="JavaScript">JavaScript</option>
+        <option value="Scratch">Scratch</option>
+      </select>
+    </form>
+
+    <p id="empty-message" class="empty" hidden>Ничего не найдено</p>
+  </main>
+
+  <script type="module" src="./app.js"></script>
+</body>
+</html>
